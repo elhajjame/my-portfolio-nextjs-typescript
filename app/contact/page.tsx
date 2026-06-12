@@ -1,3 +1,4 @@
+export const metadata = { title: "Contact" };
 function page() {
   return (
     <div>

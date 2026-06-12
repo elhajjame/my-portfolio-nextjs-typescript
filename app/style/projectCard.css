@@ -1,0 +1,77 @@
+.project-card {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border-width: 1px;
+  height: 100%;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  backdrop-blur: blur(12px);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.project-card__line {
+
+}
+
+.project-card:hover .project-card__line {
+
+}
+
+.project-card__header {
+
+}
+
+.project-card__icon {
+
+}
+
+.project-card__featured {
+
+}
+
+.project-card h3 {
+
+
+}
+
+.project-card p {
+
+}
+.project-stack {
+
+}
+
+.project-stack span {
+
+}
+
+.project-footer {
+
+}
+
+.project-footer a {
+
+}
+
+.project-footer a:hover {
+
+}
+
+.demo-btn {
+
+}
+
+.demo-btn:hover {
+
+}

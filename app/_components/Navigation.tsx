@@ -4,7 +4,10 @@ import { RiDownload2Line, RiSunLine } from "@remixicon/react";
 
 export default function Navigation() {
   return (
-    <header className="header bg-[#050505] py-6 border-b border-slate-200/50">
+    <header
+      className="header bg-[#050505] py-6 border-b border-slate-200/50
+"
+    >
       <div className="container flex justify-between items-center ">
         <span className="text-white font-bold">M.El-Hajjame</span>
         <ul className="nav">
