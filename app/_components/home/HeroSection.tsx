@@ -1,7 +1,8 @@
 import { RiCheckboxBlankCircleFill } from "@remixicon/react";
 import "../../style/home.css";
-import CoreSystem from "./CoreSystem";
+import { useRouter } from "next/navigation";
 function HeroSection() {
+  const router = useRouter();
   return (
     <div className="hero-container">
       <div>
@@ -19,7 +20,7 @@ function HeroSection() {
           </span>
         </h1>
         <p className="text-xl sm:text-2xl font-light text-slate-600 dark:text-gray-400 font-sans tracking-tight mb-4">
-          Full Stack Software Engineer & Architect
+          Software Engineer
         </p>
         <p className="text-base text-slate-600 dark:text-gray-400 max-w-xl leading-relaxed font-light ">
           Building clean, scalable web architectures, responsive user interface
@@ -30,11 +31,17 @@ function HeroSection() {
           balance functionality with minimalist design principles.
         </p>
         <div className="section-btns">
-          <button className="btn btn-1">Explore Portfolio</button>
-          <button className="btn btn-2">Contact</button>
+          <button
+            className="btn btn-1"
+            onClick={() => router.push("/portfolio")}
+          >
+            Explore Portfolio
+          </button>
+          <button onClick={() => router.push("/contact")} className="btn btn-2">
+            Contact
+          </button>
         </div>
       </div>
-      <CoreSystem />
     </div>
   );
 }
